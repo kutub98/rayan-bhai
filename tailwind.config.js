@@ -25,7 +25,30 @@ module.exports = withMT({
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
-    extend: {}
+    extend: {
+      backgroundImage: {
+        // Define a custom gradient background using CSS linear-gradient
+        "custom-gradient": "linear-gradient(to right, #050C9C, #3572EF)" // blue-800 to indigo-900 in hex
+      },
+      textColor: {
+        "gradient-transparent": "transparent"
+      },
+      animation: {
+        text: "text 5s ease infinite"
+      },
+      keyframes: {
+        text: {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center"
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center"
+          }
+        }
+      }
+    }
   },
   plugins: []
 });
