@@ -37,13 +37,13 @@ const HeroSec = () => {
   }, []);
 
   return (
-    <div className="customWidth hero overflow-hidden heroBg  items-center justify-center relative px-8 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 h-96">
+    <div className="customWidth py-9 hero overflow-hidden heroBg  items-center justify-center relative px-8 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 h-96">
       {/* Text Section */}
 
       <div className=" absolute top-0 left-0 w-full h-full bg-[#ffffffbb]"></div>
       <div className="w-full text-left z-[999]">
-        <h1 className="animate-text bg-gradient-to-r from-[#7ecdbf] via-[#02178d] to-[#253633] bg-clip-text text-transparent  text-xl my-2 font-black">
-          Hi, WELCOME TO RAYAN BD
+        <h1 className="animate-text capitalize bg-gradient-to-r from-[#7ecdbf] via-[#02178d] to-[#253633] bg-clip-text text-transparent  text-lg my-2 font-black">
+          hi, welcome to rayanbd
         </h1>
         <TypeAnimation
           sequence={[
@@ -60,7 +60,7 @@ const HeroSec = () => {
           speed={50}
           style={{ fontSize: "2em", display: "inline-block" }}
           repeat={Infinity}
-          className="animate-text bg-gradient-to-r from-[#7ecdbf] via-[#02178d] to-[#253633] bg-clip-text text-transparent uppercase lg:text-3xl md:text-2xl text-xl my-2 font-black"
+          className="animate-text bg-gradient-to-r from-[#7ecdbf] via-[#02178d] to-[#253633] bg-clip-text text-transparent uppercase lg:text-2xl md:text-2xl text-xl my-2 font-black"
         />
 
         <p className="text-xl font-normal my-2">
